@@ -1,0 +1,66 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+/*corpo da pagina, imagem do fundo,tamanho da imagem*/
+body{
+    background-image: url(354634858d394f91346917b0f9ca8402.jpg);
+    background-size: cover;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+/*parte do menu superior, cor do fundo do menu, alinhamento do texto...*/
+.menu-bar{
+    background: #d18e00;
+    text-align: center;
+}
+.menu-bar ul{
+    display: inline-flex;/*deixa um item ao lado do outro*/
+    list-style: none;/*tira as bolinhas de cada item*/
+    color: #fff;
+}
+.menu-bar ul li{
+    width: 120px;/*separa as opções selecionáveis*/
+    margin: 15px;/*espaçamento entre as opções*/
+    padding: 15px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.active, .menu-bar ul li :hover{
+    background: #ffb311;
+    border-radius: 3px;
+}
+.menu-bar, .fa{
+    margin-right: 8px;
+}
+.sub-menu1{
+    display: grid;
+}
+.menu-bar ul li :hover, .sub-menu1{
+    display: flex;
+    position: absolute;
+    background: #d18e00;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li :hover, .sub-menu1 ul{
+    display: flow-root;
+    margin: 10px;
+}
+.menu-bar ul li :hover, .sub-menu1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li :hover, .sub-menu1 ul li:last-child{
+    border-bottom: khaki;
+}
+.menu-bar ul li :hover, .sub-menu1 ul li a:hover{
+    color: #b2ff00;
+}
