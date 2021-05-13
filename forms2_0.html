@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forms2_0.css">
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+    <title>Artist Form</title>
+</head>
+<body>
+    <header class="header">
+        <p class="menu"><strong>For fun</strong></p>
+    </header>
+    <div class="cabecalho">
+        <h1><strong>Cadastro de artistas</strong></h1>
+        <h2><strong>Complete suas informações</strong></h2>
+    </div>
+    <br>
+    <form>
+        <fieldset class="excential">
+            <div class="information">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" required>
+            </div>
+            <div class="information">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" required>
+            </div>
+            <div class="information">
+                <label for="Email"><strong>Email</strong></label>
+                <input type="email" name="email" required>
+            </div>
+        </fieldset>
+        <br>
+        <!-- RADIO cria botoes selecionaveis-->
+            <div class="camp">
+                <label for=""><strong>Que tipo de arte voce cria?</strong></label>
+                <br><br>
+                <label for="">
+                <input type="radio" value="Ilustrações digitais">Ilustrações digitais
+                </label>
+                <label for="">
+                    <input type="radio" value="Desenhos a mão">Desenhos a mão
+                </label>
+                <label for="">
+                    <input type="radio" value="Pinturas em tela">Pinturas em geral
+                </label>
+                <label for="">
+                    <input type="radio" value="Aquarela">Aquarela
+                </label>
+                <label for="">
+                    <input type="radio" value="Pintura a óleo">Pintura a óleo
+                </label>
+                <label for="">
+                    <input type="radio" value="Pintura usando marcadores">Pintura usando marcadores
+                </label>
+                <label for="">
+                    <input type="radio" value="Outros">Outros
+                </label>
+            </div>
+            <br>
+            <div class="camp2">
+                <label for=""><strong>Senioridade:</strong></label>
+                <select id="senioridade">
+                    <option selected desabled value="">Selecione</option>
+                    <option value="">Iniciante</option>
+                    <option value="">Intermediário</option>
+                    <option value="">Profissional</option>
+                    <option value="">Lenda</option>
+                </select>
+            </div>
+            <br>
+            <div class="camp3">
+                <label for=""><strong>Conte-nos um pouco sobre voce</strong></label>
+                <br>
+                <textarea cols="30" rows="10"></textarea>
+            </div>
+            <br>
+            <div>
+                <button class="button" type="submit">Concluir</button>
+            </div>
+            <br><br> 
+            <div class="objectL1"></div>
+            <div class="objectL2"></div>
+            <div class="objectR1"></div>
+            <div class="objectR2"></div>
+    </form>
+    <footer>
+        <p class="rodape"><strong>Siga-nos no instagram</strong></p>
+        <br>
+        <a href=""></a>
+    </footer>
+</body>
+</html>

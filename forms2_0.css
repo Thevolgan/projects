@@ -1,0 +1,239 @@
+* body{
+    background: url(background2.0.png);
+    background-color: rgb(0, 0, 0);
+    background-repeat: no-repeat;/*faz com que a imagem de fundo nao fique se multiplicando*/
+    background-size: cover;/*coloca a imagem de fundo na melhor posição*/
+}
+@keyframes animação1{
+    0%{
+        transform: scale(0.1);
+        opacity: 0;
+    }
+    50%{
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.header{
+    background: linear-gradient(#020538, rgba(32, 32, 32, 0.342));
+    height: 50px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    text-align: center;
+}
+.menu{
+    padding: 10px;
+}
+.cabecalho{
+    background: #25b8d99a;
+    width: 600px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 30px;
+    color:#090f91;
+    text-align: center;
+    border-radius: 5px;
+    opacity: 1;
+    box-shadow: 3px 3px 15px #093038;
+    text-shadow: 3px 3px 25px #ffffff;
+    padding: 10px;
+    animation-name: animação1;
+    animation-duration: 1s;
+}
+.excential{
+    background: rgba(37, 184, 217, 0.7);
+    width: 600px;
+    margin: auto;
+    color: #1d2058;
+    border-radius: 5px;
+    opacity: 1;
+    border: none;
+    font-size: 20px;
+    animation-name: animação1;
+    animation-duration: 1.2s;
+    animation-delay: 0.2s;
+    box-shadow: 3px 3px 15px #000;
+}
+/*paddind so funcionou quando eu tratei da classe dos elementos dentro da classe caixa*/
+.information{
+    float: left;
+    padding: 10px;
+    text-shadow: 3px 2px 25px #093038;
+}
+.camp{
+    background: rgba(37, 184, 217, 0.7);
+    width: 610px;
+    border: none;
+    color:#1d2058;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 17px;
+    box-shadow: 3px 3px 15px #093038;
+    animation-name: animação1;
+    animation-duration: 1.2s;
+    animation-delay: 0.3s;
+}
+.camp label{
+    text-align: justify;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.camp label:hover{
+    text-shadow: 0px 0px 8px #fff;
+}
+/*caixa de dados pessoais*/
+.information input[type="text"], .information input[type="email"], .information select, .camp textarea{
+    box-shadow: 3px 3px 5px #093038;
+    border-radius: 5px;
+    border: none;
+    height: 27px;
+    background: rgb(233, 233, 233);
+}
+.camp2{
+    background: rgba(37, 184, 217, 0.7);
+    width: 610px;
+    border: none;
+    color:#1d2058;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 17px;
+    box-shadow: 3px 3px 15px #093038;
+    animation-name: animação1;
+    animation-duration: 1.2s;
+    animation-delay: 0.4s;
+}
+.camp2 label{
+    display: inline;
+    margin-bottom: 5px;
+}
+/*caixa SELECIONE*/
+.camp2 #senioridade{
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+    background: rgb(226, 226, 226);
+    box-shadow: 3px 3px 15px rgb(112, 112, 112);
+}
+.camp3{
+    background: rgba(37, 184, 217, 0.7);
+    width: 610px;
+    border: none;
+    color:#1d2058;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 17px;
+    box-shadow: 3px 3px 15px #093038;
+    text-align: center;
+    padding: 10px;
+    animation-name: animação1;
+    animation-duration: 1.2s;
+    animation-delay: 0.5s;
+}
+.camp3 label{
+    display: block;
+    margin-bottom: 5px;
+}
+.camp3 textarea{
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    display: block;
+    width: 500px;
+    margin-left: 49px;
+    padding: 9px;
+    background: rgb(233, 233, 233);
+    box-shadow: 3px 3px 15px rgb(104, 104, 104);
+}
+.button{
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    width: 150px;
+    border-radius: 5px;
+    border: none;
+    background: #20aac9;
+    box-shadow: 3px 3px 15px #093038;
+    margin-left: 570px;
+    animation-name: animação1;
+    animation-duration: 1.2s;
+    animation-delay: 0.6s;
+}
+.button:hover{
+    color: #fff;
+    background: #1f225f;
+}
+/*SGUNDA ANIMAÇÃO:*/
+@keyframes animaçao2{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/*para as barras animadas aos lados do forms*/
+.objectL1{
+    width: 12px;
+    height: 670px;
+    background: #20aac9;
+    margin-top: -800px;
+    margin-left: 10px;
+    border-radius: 5px;
+    animation-name: animação1;
+    animation-duration: 1.2s;
+    animation-delay: 0.2s;
+    box-shadow: 3px 3px 15px #000;
+    animation-name: animaçao2;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.objectL2{
+    width: 12px;
+    height: 500px;
+    background: #20aac9;
+    margin-top: -575px;
+    margin-left: 35px;
+    border-radius: 5px;
+    animation-name: animação1;
+    animation-duration: 1.2s;
+    animation-delay: 0.3s;
+    box-shadow: 3px 3px 15px #000;
+}
+.objectR1{
+    width: 12px;
+    height: 670px;
+    background: #20aac9;
+    margin-top: -600px;
+    float: right;
+    margin-right: 10px;
+    border-radius: 5px;
+    animation-name: animação1;
+    animation-duration: 1.2s;
+    animation-delay: 0.2s;
+    box-shadow: 3px 3px 15px #000;
+    animation-name: animaçao2;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.objectR2{
+    width: 12px;
+    height: 500px;
+    background: #20aac9;
+    margin-top: -500px;
+    float: right;
+    margin-right: 15px;
+    border-radius: 5px;
+    animation-name: animação1;
+    animation-duration: 1.2s;
+    animation-delay: 0.3s;
+    box-shadow: 3px 3px 15px #000;
+}
+
